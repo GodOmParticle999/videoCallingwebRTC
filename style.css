@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+}
+.container {
+    margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+.localVideoCon {
+    padding: 20px;
+  width: 50%;
+  border: 2px solid #fff;
+}
+.localVideo,.remoteVideo{
+    width: 100%;
+}
+.remoteVideoCon {
+    padding: 20px;
+  width: 50%;
+  border: 2px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .localVideoCon,
+  .remoteVideoCon {
+    width: 100%;
+  }
+}
